@@ -10,6 +10,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.AppTheme2)
+
         setContentView(R.layout.activity_main)
 
         text1.text = "This is sample"
