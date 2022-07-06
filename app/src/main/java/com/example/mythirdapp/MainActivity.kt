@@ -2,8 +2,6 @@ package com.example.mythirdapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
 import android.widget.Toast
 import com.example.mythirdapp.databinding.ActivityMainBinding
 
