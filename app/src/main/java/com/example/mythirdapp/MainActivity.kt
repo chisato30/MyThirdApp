@@ -13,8 +13,13 @@ class MainActivity : AppCompatActivity() {
             .get(MyViewModel::class.java)
         setContentView(R.layout.activity_main)
 
-        text1.text = updateData(myViewModel)
-        button1.setOnClickListener {}
+        button1.setOnClickListener {
+            val nm =frm_name.text
+            val ml =frm_mail.text
+            val ag =frm_age.text
+            myViewModel.add(nm.toString(), ml.toString(), ag.toString().toInt())
+            text1.text = updateData(myViewModel)
+        }
     }
             fun updateData(vm: MyViewModel): String {
                 val data = vm.getAll()
