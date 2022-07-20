@@ -32,6 +32,9 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    buildFeatures {
+        dataBinding = true
+    }
     apply plugin: 'kotlin-android'
     apply plugin: 'kotlin-android-extensions'
 }
